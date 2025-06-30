@@ -18,5 +18,5 @@ def movies():
     movies = Movie.query.all()
     return make_response(jsonify([movie.to_dict() for movie in movies]), 200)
 
-# if __name__ == '__main__':
-#     app.run(port=5555)
+if __name__ == '__main__':
+    app.run(port=5555)
